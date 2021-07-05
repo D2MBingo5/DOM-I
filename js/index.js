@@ -100,3 +100,28 @@ console.log(tch2H4);
 const tch2P = topContentHeader2.querySelector('p')
 tch2P.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 console.log(tch2P);
+
+const midImg = document.querySelector('#middle-img')
+midImg.src = 'img/mid-page-accent.jpg'
+console.log(midImg);
+
+const bottomContentHeader1 = document.querySelector('.main-content .bottom-content .text-content')
+console.log(bottomContentHeader1);
+const bottomContentHeader2 = bottomContentHeader1.nextElementSibling
+console.log(bottomContentHeader2);
+const bottomContentHeader3 = bottomContentHeader2.nextElementSibling
+console.log(bottomContentHeader3);
+
+const bch1H4 = bottomContentHeader1.querySelector('h4')
+bch1H4.textContent = 'Services'
+const bch1P = bottomContentHeader1.querySelector('p')
+bch1P.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+const bch2H4 = bottomContentHeader2.querySelector('h4')
+bch2H4.textContent = 'Product'
+const bch2P = bottomContentHeader2.querySelector('p')
+bch2P.textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+const bch3H4 = bottomContentHeader3.querySelector('h4')
+bch3H4.textContent = 'Vision'
+const bch3P = bottomContentHeader3.querySelector('p')
+bch3P.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
