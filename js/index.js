@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const navItem1 = document.querySelector(".container header nav a")
+const navItem1 = document.querySelector('.container header nav a')
 console.log(navItem1);
 const navItem2 = navItem1.nextElementSibling
 console.log(navItem2);
@@ -81,3 +81,22 @@ console.log(ctaButton);
 const ctaImage = document.querySelector('#cta-img')
 ctaImage.src = 'img/header-img.png'
 console.log(ctaImage);
+
+const topContentHeader1 = document.querySelector('.main-content .top-content .text-content')
+console.log(topContentHeader1);
+const topContentHeader2 = topContentHeader1.nextElementSibling
+console.log(topContentHeader2);
+
+const tch1H4 = topContentHeader1.querySelector('h4')
+tch1H4.textContent = 'Features'
+console.log(tch1H4);
+const tch1P = topContentHeader1.querySelector('p')
+tch1P.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+console.log(tch1P);
+
+const tch2H4 = topContentHeader2.querySelector('h4')
+tch2H4.textContent = 'About'
+console.log(tch2H4);
+const tch2P = topContentHeader2.querySelector('p')
+tch2P.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+console.log(tch2P);
