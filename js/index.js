@@ -53,3 +53,10 @@ const navItem5 = navItem4.nextElementSibling
 console.log(navItem5);
 const navItem6 = navItem5.nextElementSibling
 console.log(navItem6);
+
+navItem1.textContent = 'Services'
+navItem2.textContent = 'Product'
+navItem3.textContent = 'Vision'
+navItem4.textContent = 'Features'
+navItem5.textContent = 'About'
+navItem6.textContent = 'Content'
