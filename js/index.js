@@ -60,3 +60,24 @@ navItem3.textContent = 'Vision'
 navItem4.textContent = 'Features'
 navItem5.textContent = 'About'
 navItem6.textContent = 'Content'
+
+const lineBreak = document.createElement('br')
+console.log(lineBreak);
+
+const ctaTextHeader = document.querySelector('.cta .cta-text h1')
+
+ctaTextHeader.textContent = 'DOM'
+ctaTextHeader.appendChild(lineBreak)
+ctaTextHeader.textContent += ' Is'
+ctaTextHeader.appendChild(lineBreak)
+ctaTextHeader.textContent += ' Awesome'
+
+console.log(ctaTextHeader);
+
+const ctaButton = document.querySelector('.cta .cta-text button')
+ctaButton.textContent = 'Get Started'
+console.log(ctaButton);
+
+const ctaImage = document.querySelector('#cta-img')
+ctaImage.src = 'img/header-img.png'
+console.log(ctaImage);
