@@ -42,16 +42,22 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navItem1 = document.querySelector('.container header nav a')
+navItem1.style.color = 'green'
 console.log(navItem1);
 const navItem2 = navItem1.nextElementSibling
+navItem2.style.color = 'green'
 console.log(navItem2);
 const navItem3 = navItem2.nextElementSibling
+navItem3.style.color = 'green'
 console.log(navItem3);
 const navItem4 = navItem3.nextElementSibling
+navItem4.style.color = 'green'
 console.log(navItem4);
 const navItem5 = navItem4.nextElementSibling
+navItem5.style.color = 'green'
 console.log(navItem5);
 const navItem6 = navItem5.nextElementSibling
+navItem6.style.color = 'green'
 console.log(navItem6);
 
 navItem1.textContent = 'Services'
@@ -60,6 +66,23 @@ navItem3.textContent = 'Vision'
 navItem4.textContent = 'Features'
 navItem5.textContent = 'About'
 navItem6.textContent = 'Contact'
+
+const navItemA = document.createElement('a')
+navItemA.textContent = 'Blog'
+navItemA.href = '#'
+navItemA.style.color = 'green'
+document.querySelector('.container header nav').appendChild(navItemA)
+console.log(navItemA);
+
+const navItemP = document.createElement('a')
+navItemP.textContent = 'Facebook'
+navItemP.href = '#'
+navItemP.style.color = 'green'
+document.querySelector('.container header nav').prepend(navItemP)
+console.log(navItemP);
+
+const navItems = document.querySelectorAll('.container header nav a')
+console.log(navItems);
 
 const lineBreak = document.createElement('br')
 console.log(lineBreak);
