@@ -59,7 +59,7 @@ navItem2.textContent = 'Product'
 navItem3.textContent = 'Vision'
 navItem4.textContent = 'Features'
 navItem5.textContent = 'About'
-navItem6.textContent = 'Content'
+navItem6.textContent = 'Contact'
 
 const lineBreak = document.createElement('br')
 console.log(lineBreak);
@@ -71,7 +71,7 @@ ctaTextHeader.appendChild(lineBreak)
 ctaTextHeader.textContent += ' Is'
 ctaTextHeader.appendChild(lineBreak)
 ctaTextHeader.textContent += ' Awesome'
-
+// I haven't found a way to put breaks into the .textContent
 console.log(ctaTextHeader);
 
 const ctaButton = document.querySelector('.cta .cta-text button')
@@ -125,3 +125,18 @@ bch3H4.textContent = 'Vision'
 const bch3P = bottomContentHeader3.querySelector('p')
 bch3P.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
+const contactH4 = document.querySelector('.contact h4')
+contactH4.textContent = 'Contact'
+console.log(contactH4);
+const contactP1 = document.querySelector('.contact p')
+contactP1.textContent = '123 Way 456 Street Somewhere, USA'
+console.log(contactP1);
+const contactP2 = contactP1.nextElementSibling
+contactP2.textContent = '1 (888) 888-8888'
+console.log(contactP2);
+const contactP3 = contactP2.nextElementSibling
+contactP3.textContent = 'sales@greatidea.io'
+console.log(contactP3);
+
+const footerCopyright = document.querySelector('footer p')
+footerCopyright.textContent = 'Copyright Great Idea! 2018'
